@@ -13,18 +13,9 @@
 		
 		<title>Beerture - Avatar Creator</title>
 		
-		
 		<script>
-			var count = 0;
-			function foo(){
-				count = count + 1;
-				console.log(count);
-				var img = document.getElementById("head");
-				if (count%2 === 1) {
-					img.style.opacity = '0';
-				} else {
-					img.style.opacity = '1';
-				}		
+			function changeChoice(newChoice) {
+				document.getElementById("current").innerHTML = newChoice;
 			}
 		</script>
 		
@@ -32,27 +23,40 @@
 	
 	<body>
 		
-		<div id="character" class="d-flex justify-content-center" style="position:relative">
+		<div id="character" class="d-flex justify-content-center" style="position:relative; margin-top:10px">
 			
-			<img src="images/green_tshirt.png" class="elements">
+			<img src="images/green_tshirt.png" class="elements" style="border-style:solid;">
 			
 			<img src="images/circle_head.png" class="elements">
 			
 		</div>
 		
-		<div id="choicePanel" class="d-flex justify-content-center" style=" margin-top:500px">
+		<div id="choicePanel" class="d-flex justify-content-center" style=" margin-top:500px;">
 			<div class="d-flex flex-row">
-				<div class="p-2"><a href=#>
-				<img border="0" src="images/arrow1.png" width="75" height="65">
-			</a></div>
-				<div class="p-2"><p style="font-size:40px">Głowa</p></div>
-				<div class="p-2"><a href=#>
-				<img border="0" src="images/arrow2.png" width="75" height="65">
-			</a></div>
+				<div class="p-2">
+					<a href=#>
+						<img border="0" src="images/arrow1.png" width="75" height="65">
+					</a>
+				</div>
+				<div class="p-2">
+					<p style="font-size:40px" id="current">Głowa</p>
+				</div>
+				<div class="p-2">
+					<a href=#>
+						<img border="0" src="images/arrow2.png" width="75" height="65">
+					</a>
+				</div>
+			</div>
 		</div>
-			
-			
-			
+		
+		<div class="d-flex justify-content-around" id="choiceOptions">
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Głowa</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Włosy</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Oczy</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Uszy</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Nos</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Usta</a>
+			<a href="#" onclick="changeChoice(this.text)" class="btn btn-primary btn-lg">Tshirt</a>
 		</div>
 		
 		
