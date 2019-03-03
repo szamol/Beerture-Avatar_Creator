@@ -1,0 +1,12 @@
+body {
+	background-color: #ffc460;
+	text-align:center;
+}
+.elements {
+	width:450px;
+	height:450px;
+	position: absolute; 
+	top: 30; left: 70;
+}
+
+
