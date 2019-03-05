@@ -60,3 +60,7 @@ body {
 #choicePanel {
 	margin-top: 10px;
 }
+
+.arrow {
+	visibility: hidden;
+}

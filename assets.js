@@ -69,6 +69,9 @@ let previousRecord;
 //choosing and showing desired property
 const selectProperty = element => {
 
+    //unhiding arrows
+    $('.arrow').css('visibility', 'visible');
+
     $('.' + element.target.innerHTML.toLowerCase() + '_back').css('visibility', 'visible');
     $('#propertyLabel').html(element.target.innerHTML);
 
