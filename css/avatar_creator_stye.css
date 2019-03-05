@@ -13,14 +13,14 @@ body {
 .shirt_back {
 	margin: 10px;
 	position: absolute;
-	filter: brightness(70%);
+	opacity: .7;
 	visibility: hidden;
 }
 
 .eyes_back {
 	margin: 10px;
 	position: absolute;
-	filter: brightness(70%);
+	opacity: .7;
 	visibility: hidden;
 }
 
