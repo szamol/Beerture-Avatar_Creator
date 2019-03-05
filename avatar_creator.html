@@ -13,49 +13,62 @@
 		
 		<title>Beerture - Avatar Creator</title>
 		
-		
-		<script>
-			var count = 0;
-			function foo(){
-				count = count + 1;
-				console.log(count);
-				var img = document.getElementById("head");
-				if (count%2 === 1) {
-					img.style.opacity = '0';
-				} else {
-					img.style.opacity = '1';
-				}		
-			}
-		</script>
-		
 	</head>
 	
 	<body>
 		
-		<div id="character" class="d-flex justify-content-center" style="position:relative">
+		<div id="character" class="d-flex justify-content-center">
 			
-			<img src="images/green_tshirt.png" class="elements">
-			
-			<img src="images/circle_head.png" class="elements">
-			
-		</div>
-		
-		<div id="choicePanel" class="d-flex justify-content-center" style=" margin-top:500px">
-			<div class="d-flex flex-row">
-				<div class="p-2"><a href=#>
-				<img border="0" src="images/arrow1.png" width="75" height="65">
-			</a></div>
-				<div class="p-2"><p style="font-size:40px">Głowa</p></div>
-				<div class="p-2"><a href=#>
-				<img border="0" src="images/arrow2.png" width="75" height="65">
-			</a></div>
-		</div>
-			
-			
+			<img src="images/circle_head.png" class="elements_front">
+			<img src="images/green_tshirt.png" class="elements_front shirt" id="shirt1">
+			<img src="images/black_eyes.png" class="elements_front eyes" id="eyes1">
 			
 		</div>
+
+		<div class="d-flex justify-content-center">
+
+			<div><img src="images/purple_tshirt.png" class="shirt_back shirt" id="shirt2"></div>
+			<div><img src="images/white_tshirt.png" class="shirt_back shirt" id="shirt3"></div>
+			<div><img src="images/blue_tshirt.png" class="shirt_back shirt" id="shirt4"></div>
+			<div><img src="images/black_tshirt.png" class="shirt_back shirt" id="shirt5"></div>
+			<div><img src="images/red_tshirt.png" class="shirt_back shirt" id="shirt6"></div>
+
+			<div><img src="images/blue_eyes.png" class="eyes_back eyes" id="eyes2"></div>
+			<div><img src="images/green_eyes.png" class="eyes_back eyes" id="eyes3"></div>
+			<div><img src="images/red_eyes.png" class="eyes_back eyes" id="eyes4"></div>
+			<div><img src="images/yellow_eyes.png" class="eyes_back eyes" id="eyes5"></div>
+
+
+
+		</div>
 		
+		<div id="choicePanel" class="d-flex justify-content-center">
+			
+			<div class="d-flex flex-row" style="margin-top: 500px">
+					<div class="p-2"><a href=#>
+					<img border="0" src="images/arrow1.png" width="75" height="65" class="switch_left">
+				</a></div>
+					<div class="p-2"><p style="font-size:40px" id="propertyLabel">Hi I'm Nina</p></div>
+					<div class="p-2"><a href=#>
+					<img border="0" src="images/arrow2.png" width="75" height="65" class="switch_right">
+				</a></div>
+			</div>
+				
+		</div>
+
+		<div class="d-flex justify-content-around" id="choiceOptions" style="margin-top:25px">
+			<div class="btn btn-primary btn-lg" id="headButton">Head</div>
+			<div class="btn btn-primary btn-lg" id="hairButton">Hair</div>
+			<div class="btn btn-primary btn-lg" id="eyesButton">Eyes</div>
+			<div class="btn btn-primary btn-lg" id="earsButton">Ears</div>
+			<div class="btn btn-primary btn-lg" id="noseButton">Nose</div>
+			<div class="btn btn-primary btn-lg" id="lipsButton">Lips</div>
+			<div class="btn btn-primary btn-lg" id="shirtButton">Shirt</div>
+		</div>
 		
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="assets.js"></script>
+
 		<!--Bootstrap scrpits-->
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -1,12 +1,62 @@
 body {
-	background-color: #ffc460;
+	background-color: #5b645d;
 	text-align:center;
 }
-.elements {
+
+.elements_front {
 	width:450px;
 	height:450px;
 	position: absolute; 
 	top: 30; left: 70;
 }
 
+.shirt_back {
+	margin: 10px;
+	position: absolute;
+	filter: brightness(70%);
+	visibility: hidden;
+}
 
+.eyes_back {
+	margin: 10px;
+	position: absolute;
+	filter: brightness(70%);
+	visibility: hidden;
+}
+
+/* .shirt:hover {
+	border: 2px solid #E9B64A;
+	filter: brightness(100%);
+} */
+
+#shirt2 {
+	width:200px;
+	height:200px;
+	margin-left: 110px;
+	margin-right: auto;
+}
+
+.shirt_back:last-of-type {
+	width:200px;
+	height:200px;
+	margin-left: -305px;
+	margin-right: auto;
+}
+
+#eyes2 {
+	width:200px;
+	height:200px;
+	margin-left: 110px;
+	margin-right: auto;
+}
+
+.eyes_back:last-of-type {
+	width:200px;
+	height:200px;
+	margin-left: -305px;
+	margin-right: auto;
+}
+
+#choicePanel {
+	margin-top: 10px;
+}
