@@ -1,0 +1,25 @@
+{
+  "name": "beerture-avatar_creator",
+  "version": "1.0.0",
+  "description": "avatar_testing_packages",
+  "main": "assets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szamol/Beerture-Avatar_Creator.git"
+  },
+  "author": "Miczas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szamol/Beerture-Avatar_Creator/issues"
+  },
+  "homepage": "https://github.com/szamol/Beerture-Avatar_Creator#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "requirejs": "^2.3.6",
+    "webpack": "^4.29.6"
+  }
+}

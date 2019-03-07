@@ -23,6 +23,12 @@ body {
 	opacity: .7;
 	visibility: hidden;
 }
+.ears_back {
+	margin: 10px;
+	position: absolute;
+	opacity: .7;
+	visibility: hidden;
+}
 
 /* .shirt:hover {
 	border: 2px solid #E9B64A;
@@ -59,10 +65,33 @@ body {
 	margin-top: 60px;
 }
 
+#ears2 {
+	width:200px;
+	height:200px;
+	margin-left: 110px;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+.ears_back:last-of-type {
+	width:200px;
+	height:200px;
+	margin-left: -305px;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
 #choicePanel {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .arrow {
 	visibility: hidden;
+	opacity: .5;
+}
+
+.arrow:hover {
+	opacity: 1;
+
+	transition: all .5s ease-in-out;
 }
